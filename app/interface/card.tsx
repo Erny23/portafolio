@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaCloudArrowDown } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
 import { SiWhatsapp } from "react-icons/si";
+import Subtitle from "../components/subtitle";
 
 export default function CardComp() {
     return (
@@ -12,7 +13,7 @@ export default function CardComp() {
             <Card className="w-full h-[50rem] md:h-[37rem] lg:h-[46rem] lg:max-w-md">
                 <div id="profilePhoto" className="absolute top-0 left-0 rounded-t-md overflow-hidden w-full h-[36rem] bg-cover bg-top bg-no-repeat md:bg-top md:h-[25rem] md:bg-[length:22rem] lg:h-[30rem] lg:max-w-md lg:bg-cover" style={{backgroundImage: `url("/imagenPerfil.jpg")`}}></div>
                 <h5 className="text-xl text-[#323232] font-bold mt-[29rem] md:mt-[20rem] lg:mt-[23rem]">Erntesto Fava</h5>
-
+                <Subtitle />
                 <div className="flex justify-between px-20 lg:px-24">
                     <SiWhatsapp className="text-xl text-[#323232] hover:text-[#4c7753] lg:text-2xl" />
                     <FiInstagram className="text-xl text-[#323232] hover:text-[#4c7753] lg:text-2xl" />
