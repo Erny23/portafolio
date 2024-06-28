@@ -4,30 +4,64 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 133, 137, 138;
+  --background-end-rgb: 229, 230, 232;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/*Fondo degradado*/
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient( to right, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)) );
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+#page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Borde verde de perfil*/
+#profileCard::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(76, 119, 83, 0.4) 0%, rgba(76, 119, 83, 0.01) 100%);
+  border-radius: 4px;
+}
+
+/*Paletas bordes en el foto de perfil*/
+#profilePhoto::before {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  left: -25%;
+  bottom: -65%;
+  width: 100%;
+  height: 70%;
+  transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+}
+
+#profilePhoto::after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  left: auto;
+  right: -25%;
+  bottom: -66%;
+  width: 100%;
+  height: 70%;
+  transform: rotate(-12deg);
+  -webkit-transform: rotate(-12deg);
 }
