@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import SidebarMovil from "./interface/sidebarMobile";
+import SidebarComp from "./interface/sidebar";
 import CardComp from "./interface/card"
 import "./globals.css";
 
@@ -19,6 +20,7 @@ export default function RootLayout( {children} : Readonly<{children: React.React
           <div className="container mx-auto px-4 flex flex-row lg:px-12">
             <header className="me-2 z-30">
               <SidebarMovil />
+              <SidebarComp />
             </header>
             <main className="w-full my-5 mt-[6rem] xs:mt-5">
               <div className="grid grid-cols-1 gap-4 justify-center md:gap-0 md:grid-cols-2 xl:grid-cols-[28rem_minmax(0rem,_1fr)_0rem]">

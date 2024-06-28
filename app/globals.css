@@ -28,6 +28,15 @@ body {
   align-items: center;
 }
 
+/*Ajustes de estilo para sidebar de escritorio*/
+#sidebar div {
+  background-color: white;
+}
+
+#sidebar div div ul li a span {
+  padding: 0;
+}
+
 /*Borde verde de perfil*/
 #profileCard::before {
   content: "";
