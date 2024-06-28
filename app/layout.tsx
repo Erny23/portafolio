@@ -4,6 +4,7 @@ import SidebarMovil from "./interface/sidebarMobile";
 import SidebarComp from "./interface/sidebar";
 import CardComp from "./interface/card"
 import "./globals.css";
+import Info from "./interface/info";
 
 const monserrat = Montserrat({ subsets: ["latin"] });
 
@@ -27,8 +28,10 @@ export default function RootLayout( {children} : Readonly<{children: React.React
                 <section id="profileCard" className="relative float-left h-fit">
                   <CardComp />
                 </section>
+                <Info>
+                  {children}
+                </Info>
               </div>
-              {children}
             </main>
           </div>
         </div>
