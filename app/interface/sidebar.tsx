@@ -9,7 +9,7 @@ import { FaAddressBook } from "react-icons/fa6";
 
 export default function SidebarComp() {
     return (
-        <Sidebar id="sidebar" className='my-5 mt-12 w-fit h-fit hidden xs:block md:my-0 md:mt-12'>
+        <Sidebar id="sidebar" className='fixed w-fit h-fit my-4 ms-[-5.6rem] mt-0 left-auto float-left z-[100] hidden xs:block md:my-0 lg:mt-8 lg:relative lg:ms-0 lg:me-2 ls:left-0'>
             <Sidebar.Items>
                 <Sidebar.ItemGroup className="divide-y">
                     <Sidebar.Item className="flex-col px-0 pb-0 text-xs" href="/">

@@ -8,6 +8,29 @@
   --background-end-rgb: 229, 230, 232;
 }
 
+/*barras de scroll*/
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+/* fondo de barra de scroll */
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* barra para scroll */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+
+/* hover de para barra de scroll */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 /*Fondo degradado*/
 body {
   color: rgb(var(--foreground-rgb));
@@ -21,13 +44,13 @@ body {
 }
 
 /*Centrado de contenido*/
-#page {
+/*#page {
   position: relative;
   height: 100vh;
   width: 100%;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 /*Ajustes de estilo para sidebar de escritorio*/
 #sidebar div {
@@ -56,11 +79,11 @@ body {
   position: absolute;
   background: #ffffff;
   left: -25%;
-  bottom: -65%;
+  bottom: -56%;
   width: 100%;
   height: 70%;
   transform: rotate(12deg);
-  -webkit-transform: rotate(12deg);
+  -webkit-transform: rotate(9deg);
 }
 
 #profilePhoto::after {
@@ -69,9 +92,50 @@ body {
   background: #ffffff;
   left: auto;
   right: -25%;
-  bottom: -66%;
+  bottom: -56%;
   width: 100%;
   height: 70%;
   transform: rotate(-12deg);
-  -webkit-transform: rotate(-12deg);
+  -webkit-transform: rotate(-9deg);
 }
+
+/*Decorado de titulos*/
+.title::before {
+  content: "";
+  position: absolute;
+  margin-top: 0.2rem;
+  margin-left: -0.9rem;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, rgba(76, 119, 83, 0.4) 0%, rgba(76, 119, 83, 0.01) 100%);
+  border-radius: 30px;
+}
+
+#servicios::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 50%;
+  background: radial-gradient(ellipse at top, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+/*@media screen and (min-width: 768px) {
+  #profilePhoto::before {
+    bottom: -54%;
+  }
+  
+  #profilePhoto::after {
+    bottom: -54%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #profilePhoto::before {
+    bottom: -66%;
+  }
+  
+  #profilePhoto::after {
+    bottom: -66%;
+  }
+}*/

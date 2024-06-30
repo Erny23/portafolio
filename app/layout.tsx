@@ -17,25 +17,23 @@ export default function RootLayout( {children} : Readonly<{children: React.React
   return (
     <html lang="es">
       <body className={`${monserrat.className}`}>
-        <div id="page" className="block md:flex">
-          <div className="container mx-auto px-4 flex flex-row lg:px-12">
-            <header className="me-2 z-30">
+        <div id="page" className="relative block h-auto w-full h-auto lg:flex lg:h-[100vh] lg:justify-center lg:items-center">
+          <div className="relative mx-auto ps-24 pe-8 py-5 top-0 left-0 w-auto h-auto max-w-[700px] max-h-[initial] transition-all lg:my-[8vh] lg:mx-[6vw] lg:px-0 lg:max-w-[1268px] lg:max-h-[674px] lg:w-full lg:h-[84vh]">
+            <header>
               <SidebarMovil />
               <SidebarComp />
             </header>
-            <main className="w-full my-5 mt-[6rem] xs:mt-5">
-              <div className="grid grid-cols-1 gap-4 justify-center md:gap-0 md:grid-cols-2 xl:grid-cols-[28rem_minmax(0rem,_1fr)_0rem]">
-                <section id="profileCard" className="relative float-left h-fit">
-                  <CardComp />
-                </section>
-                <Info>
-                  {children}
-                </Info>
-              </div>
+            <main>
+              <section id="profileCard" className="relative float-none w-auto h-auto lg:w-[28rem] lg:h-full lg:float-left">
+                <CardComp />
+              </section>
+              <Info>
+                {children}
+              </Info>
             </main>
           </div>
         </div>
       </body>
     </html>
-  );
+  )
 }

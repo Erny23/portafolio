@@ -10,11 +10,11 @@ import Subtitle from "../components/subtitle";
 export default function CardComp() {
     return (
         <div id="profile" className="relative text-center z-40">
-            <Card className="w-full h-[50rem] md:h-[37rem] lg:h-[46rem] lg:max-w-md">
-                <div id="profilePhoto" className="absolute top-0 left-0 rounded-t-md overflow-hidden w-full h-[36rem] bg-cover bg-top bg-no-repeat md:bg-top md:h-[25rem] md:bg-[length:22rem] lg:h-[30rem] lg:max-w-md lg:bg-cover" style={{backgroundImage: `url("/imagenPerfil.jpg")`}}></div>
-                <h5 className="text-xl text-[#323232] font-bold mt-[29rem] md:mt-[20rem] lg:mt-[23rem]">Erntesto Fava</h5>
+            <Card className="w-full h-[37rem] lg:h-[42rem] lg:max-w-md">
+                <div id="profilePhoto" className="absolute top-0 left-0 rounded-t-md overflow-hidden w-full h-[25rem] bg-[length:22rem] bg-top bg-no-repeat z-10 lg:max-w-md" style={{backgroundImage: `url("/imagenPerfil.jpg")`}}></div>
+                <h5 className="text-xl text-[#323232] font-bold mt-[16rem] z-30 lg:mt-[12rem]">Erntesto Fava</h5>
                 <Subtitle />
-                <div className="flex justify-between px-20 lg:px-24">
+                <div className="flex justify-between px-24 sm:px-32 lg:px-24">
                     <SiWhatsapp className="text-xl text-[#323232] hover:text-[#4c7753] lg:text-2xl" />
                     <FiInstagram className="text-xl text-[#323232] hover:text-[#4c7753] lg:text-2xl" />
                     <FaLinkedin className="text-xl text-[#323232] hover:text-[#4c7753] lg:text-2xl" />
