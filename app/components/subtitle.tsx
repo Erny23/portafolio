@@ -18,7 +18,6 @@ export default function Subtitle() {
                 wrapper="span"
                 speed={5}
                 repeat={Infinity}
-                className="text-[#4c7753] font-semibold"
             />
         </>
     )

@@ -61,16 +61,10 @@ body {
   padding: 0;
 }
 
-/*Borde verde de perfil*/
-#profileCard::before {
-  content: "";
-  position: absolute;
-  left: -15px;
-  top: -15px;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(76, 119, 83, 0.4) 0%, rgba(76, 119, 83, 0.01) 100%);
-  border-radius: 4px;
+#card .flex.h-full.flex-col.justify-center.gap-4.p-6 {
+  padding: 0;
+  justify-content: start;
+  gap: 0;
 }
 
 /*Paletas bordes en el foto de perfil*/
@@ -79,7 +73,7 @@ body {
   position: absolute;
   background: #ffffff;
   left: -25%;
-  bottom: -56%;
+  bottom: -58%;
   width: 100%;
   height: 70%;
   transform: rotate(12deg);
@@ -92,7 +86,7 @@ body {
   background: #ffffff;
   left: auto;
   right: -25%;
-  bottom: -56%;
+  bottom: -58%;
   width: 100%;
   height: 70%;
   transform: rotate(-12deg);
@@ -120,6 +114,38 @@ body {
   background: radial-gradient(ellipse at top, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
 }
 
+#servicios .inline-block::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-top: 15px;
+  width: 100%;
+  height: 1px;
+  background: radial-gradient(ellipse at center, #dddddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+@media screen and (min-width: 560px) {
+  /*Borde verde de perfil*/
+  #profileCard::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(76, 119, 83, 0.4) 0%, rgba(76, 119, 83, 0.01) 100%);
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  #profileCard {
+    height: calc(100vh - 102px);
+    min-height: 675px;
+    max-height: 738px;
+  }
+}
+
 /*@media screen and (min-width: 768px) {
   #profilePhoto::before {
     bottom: -54%;
@@ -128,14 +154,10 @@ body {
   #profilePhoto::after {
     bottom: -54%;
   }
-}
+}*/
 
 @media screen and (min-width: 1024px) {
-  #profilePhoto::before {
-    bottom: -66%;
+  #card {
+    box-shadow: 5px 6px 25px 0px rgb(0 0 0 / 0.2), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   }
-  
-  #profilePhoto::after {
-    bottom: -66%;
-  }
-}*/
+}
