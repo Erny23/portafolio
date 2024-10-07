@@ -13,7 +13,7 @@ const NavDesktop = () => {
 
     return (
         <>
-            <ul className="absolute top-8 -left-24 bg-white py-3 px-2 rounded-md divide-y-2 z-20">
+            <ul id="navDesktop" className="absolute top-8 -left-24 bg-white py-3 px-2 rounded-md divide-y-2 z-20">
                 <li className={`${router === "/" ? "text-complementary" : null} py-3`}>
                     <Link href="/">
                         <FaUser className="w-full" />
