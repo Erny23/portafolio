@@ -7,6 +7,7 @@
   --foreground: rgb(100 100 100);
   --complementary: rgba(76, 119, 83);
   --tittle: rgb(50, 50, 50);
+  --textAlt: #646464
 }
 
 /*@media (prefers-color-scheme: dark) {
@@ -87,6 +88,29 @@ button#downloadCV:hover h3 {
 
 button#downloadCV:hover span {
   color: var(--complementary);
+}
+
+
+/* Decorado para titulos */
+.title {
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, rgba(76, 119, 83, 0.4) 0%, rgba(76, 119, 83, 0.01) 100%);
+  border-radius: 999px;
+  top: .2rem;
+  left: -.6rem;
+}
+
+/* Sección "sobre mi" */
+/* listas */
+section#about ul li {
+  display: flex;
 }
 
 

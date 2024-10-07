@@ -14,6 +14,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         complementary: "var(--complementary)",
         tittle: "var(--tittle)",
+        textAlt: "var(--textAlt)",
       },
       screens: {
         //Pantallas para movil

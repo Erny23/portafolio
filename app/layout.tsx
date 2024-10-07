@@ -36,7 +36,7 @@ export default function RootLayout({
           <components.cardProfile />
         </nav>
 
-        <main className="bg-white rounded-none h-[34rem] x:rounded-md lg:rounded-e-md">
+        <main className="bg-white rounded-none x:rounded-md lg:rounded-e-md">
           {children}
         </main>
 
