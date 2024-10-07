@@ -148,6 +148,24 @@ section#about ul li {
   }
 }
 
+@keyframes bottom-appearance {
+  from {
+    bottom: -6rem;
+    rotate: 0deg;
+  }
+  to {
+    bottom: 50rem;
+    rotate: 100deg
+  }
+}
+
+
+/* Fondo */
+div.cube {
+  background-color: rgba(76, 119, 83, .50);
+  bottom: -6rem;
+}
+
 
 /* Para pantallas moviles xxs */
 @media (min-width: 320px) {
@@ -181,6 +199,15 @@ section#about ul li {
 
 /* Para pantallas pc lg */
 @media (min-width: 1024px) {
+  /* Fondo */
+  div.cube {
+    animation-name: bottom-appearance;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+
   /* Contenido en general */
   main {
     opacity: 10%;

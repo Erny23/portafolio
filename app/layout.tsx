@@ -39,6 +39,8 @@ export default function RootLayout({
 
         {children}
 
+        <div className="cube absolute left-0 size-24" style={{animationDelay: "2s"}}></div>
+
       </body>
     </html>
   );
