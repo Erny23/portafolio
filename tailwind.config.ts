@@ -23,6 +23,10 @@ const config: Config = {
         // => @media (min-width: 390px)
         'xs': '414px',
         // => @media (min-width: 414px)
+        'x': '430px',
+        // => @media (min-width: 430px)
+        'xx': '560px',
+        // => @media (min-width: 560px)
         'sm': '640px',
         // => @media (min-width: 640px)
 

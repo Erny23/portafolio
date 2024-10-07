@@ -4,11 +4,15 @@ import SubtitleAnimation from './profileComps/subtitleAnimation';
 
 const CardProfile = () => {
   return (
-    <section id="cardProfile" className="bg-white rounded-none overflow-hidden lg:rounded-md">
-      <div id="profileImage" className="relative size-[25rem] overflow-hidden lg:size-[22rem]">
-        <img className="absolute -top-10 left-0 right-0 z-10" src="/profile-2.jpg" alt="Picture of the author" />
+    <section id="cardProfile" className="bg-white w-full rounded-none overflow-hidden x:rounded-md x:w-[25rem] xx:w-[30rem] md:w-[35rem] lg:w-80">
+      <div id="profileImage" className="relative w-full">
+        <div className="relative h-[25rem] bg-[url('/profile-2.jpg')] bg-cover bg-[center_top_-2.5rem] bg-no-repeat z-10 
+        xxs:h-[30rem]
+        md:h-[36rem]
+        lg:h-[22rem]"
+        ></div>
       </div>
-      <div className="px-4 py-6">
+      <div className="relative px-4 py-6 z-20">
         <h1 className="mb-3 font-bold text-3xl text-tittle text-center">Ernesto Fava</h1>
         <div className="mb-4 font-medium text-complementary text-center">
           <SubtitleAnimation />

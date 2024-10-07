@@ -92,11 +92,28 @@ button#downloadCV:hover span {
 
 /* Para pantallas moviles xxs */
 @media (min-width: 320px) {
+  /* Decorado para foto de perfil */
   div#profileImage::before {
     bottom: -2.5rem;
   }
   
   div#profileImage::after {
     bottom: -2.5rem;
+  }
+}
+
+/* Para pantallas tablet md */
+@media (min-width: 320px) {
+  /* Decorado para foto de perfil */
+  div#profileImage::before {
+    width: 20rem;
+    height: 8rem;
+    bottom: -4.5rem;
+  }
+  
+  div#profileImage::after {
+    width: 20rem;
+    height: 8rem;
+    bottom: -4.5rem;
   }
 }
