@@ -29,9 +29,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased container mx-auto flex justify-center items-center h-screen`} >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased block justify-center items-center lg:container lg:mx-auto lg:flex lg:h-screen`} >
 
-        <nav>
+        <nav className="relative">
+          <components.navbar />
           <components.cardProfile />
         </nav>
 

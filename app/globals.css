@@ -28,6 +28,8 @@ body {
   }
 }
 
+
+/* Cambio de color para iconos */
 .icons {
   cursor: pointer;
 }
@@ -36,6 +38,23 @@ body {
   color: var(--complementary);
 }
 
+
+/* Decorado para carta de perfil */
+section#cardProfile::before {
+  content: "";
+  position: absolute;
+  background-color: var(--complementary);
+  opacity: 50%;
+  border-radius: 0.375rem;
+  top: -1rem;
+  bottom: 1rem;
+  left: -1rem;
+  right: 1rem;
+  z-index: -10;
+}
+
+
+/* Decorado para foto de perfil */
 div#profileImage::before {
   content: "";
   position: absolute;
@@ -60,10 +79,24 @@ div#profileImage::after {
   z-index: 20;
 }
 
+
+/* Cambio de color para botón de "Descargar CV" */
 button#downloadCV:hover h3 {
   color: var(--complementary);
 }
 
 button#downloadCV:hover span {
   color: var(--complementary);
+}
+
+
+/* Para pantallas moviles xxs */
+@media (min-width: 320px) {
+  div#profileImage::before {
+    bottom: -2.5rem;
+  }
+  
+  div#profileImage::after {
+    bottom: -2.5rem;
+  }
 }
