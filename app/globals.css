@@ -114,6 +114,70 @@ section#about ul li {
 }
 
 
+/* Contenido en general */
+main {
+  opacity: 10%;
+}
+
+
+/* Animaciones */
+@keyframes left-appearance {
+  from {
+    margin-left: -24rem;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 100%;
+  }
+}
+
+main#home {
+  animation-name: left-appearance;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+  opacity: 100%;
+}
+
+main#resume {
+  animation-name: left-appearance;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+  opacity: 100%;
+}
+
+main#works {
+  animation-name: left-appearance;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+  opacity: 100%;
+}
+
+main#blog {
+  animation-name: left-appearance;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+  opacity: 100%;
+}
+
+main#contact {
+  animation-name: left-appearance;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+  opacity: 100%;
+}
+
+
 /* Para pantallas moviles xxs */
 @media (min-width: 320px) {
   /* Decorado para foto de perfil */

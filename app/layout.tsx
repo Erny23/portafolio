@@ -24,6 +24,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="es">
       <head>
@@ -36,9 +37,7 @@ export default function RootLayout({
           <components.cardProfile />
         </nav>
 
-        <main className="bg-white rounded-none x:rounded-md lg:rounded-s-none lg:h-[35rem] lg:-ms-0.5 lg:w-1/2 lg:p-1.5 lg:overflow-auto">
-          {children}
-        </main>
+        {children}
 
       </body>
     </html>
