@@ -29,14 +29,14 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased block justify-center items-center x:container x:mx-auto x:grid x:gap-3 x:py-8 lg:h-screen lg:flex`} >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased block justify-center items-center x:container x:mx-auto x:grid x:gap-3 x:py-8 lg:gap-0 lg:h-screen lg:flex`} >
 
         <nav className="relative">
           <components.navbar />
           <components.cardProfile />
         </nav>
 
-        <main className="bg-white rounded-none x:rounded-md lg:rounded-e-md">
+        <main className="bg-white rounded-none x:rounded-md lg:rounded-s-none lg:h-[35rem] lg:-ms-0.5 lg:w-1/2 lg:p-1.5 lg:overflow-auto">
           {children}
         </main>
 
