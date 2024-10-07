@@ -32,7 +32,7 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased block justify-center items-center x:container x:mx-auto x:grid x:gap-3 x:py-8 lg:gap-0 lg:h-screen lg:flex`} >
 
-        <nav className="relative">
+        <nav className="relative z-10">
           <components.navbar />
           <components.cardProfile />
         </nav>

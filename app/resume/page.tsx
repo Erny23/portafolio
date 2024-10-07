@@ -1,4 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Sobre mi',
+  description: 'My resume',
+}
 
 const page = () => {
   return (

@@ -29,6 +29,27 @@ body {
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 0.375rem;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 
 /* Cambio de color para iconos */
 .icons {
@@ -107,16 +128,11 @@ button#downloadCV:hover span {
   left: -.6rem;
 }
 
+
 /* Sección "sobre mi" */
 /* listas */
 section#about ul li {
   display: flex;
-}
-
-
-/* Contenido en general */
-main {
-  opacity: 10%;
 }
 
 
@@ -132,51 +148,6 @@ main {
   }
 }
 
-main#home {
-  animation-name: left-appearance;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: .5s;
-  animation-fill-mode: backwards;
-  opacity: 100%;
-}
-
-main#resume {
-  animation-name: left-appearance;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: .5s;
-  animation-fill-mode: backwards;
-  opacity: 100%;
-}
-
-main#works {
-  animation-name: left-appearance;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: .5s;
-  animation-fill-mode: backwards;
-  opacity: 100%;
-}
-
-main#blog {
-  animation-name: left-appearance;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: .5s;
-  animation-fill-mode: backwards;
-  opacity: 100%;
-}
-
-main#contact {
-  animation-name: left-appearance;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: .5s;
-  animation-fill-mode: backwards;
-  opacity: 100%;
-}
-
 
 /* Para pantallas moviles xxs */
 @media (min-width: 320px) {
@@ -189,6 +160,7 @@ main#contact {
     bottom: -2.5rem;
   }
 }
+
 
 /* Para pantallas tablet md */
 @media (min-width: 320px) {
@@ -203,5 +175,61 @@ main#contact {
     width: 20rem;
     height: 8rem;
     bottom: -4.5rem;
+  }
+}
+
+
+/* Para pantallas pc lg */
+@media (min-width: 1024px) {
+  /* Contenido en general */
+  main {
+    opacity: 10%;
+  }
+
+
+  /* Animación del contenido general */
+  main#home {
+    animation-name: left-appearance;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+    opacity: 100%;
+  }
+  
+  main#resume {
+    animation-name: left-appearance;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+    opacity: 100%;
+  }
+  
+  main#works {
+    animation-name: left-appearance;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+    opacity: 100%;
+  }
+  
+  main#blog {
+    animation-name: left-appearance;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+    opacity: 100%;
+  }
+  
+  main#contact {
+    animation-name: left-appearance;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+    opacity: 100%;
   }
 }
