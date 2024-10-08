@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main id="works" className="bg-white rounded-none x:rounded-md lg:rounded-s-none lg:h-[35rem] lg:-ms-0.5 lg:w-1/2 lg:p-1.5 lg:overflow-auto xl:h-[38rem]">
+    <main id="works" className="bg-white rounded-none x:rounded-md lg:rounded-s-none lg:h-[35rem] lg:-ms-0.5 lg:w-1/2 lg:p-1.5 lg:overflow-auto lg:-me-20 xl:h-[38rem]">
       <div className="p-6">Works</div>
     </main>
   )

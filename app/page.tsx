@@ -2,7 +2,7 @@ import { HiBattery100, HiBattery50 } from "react-icons/hi2";
 
 export default function Home() {
   return (
-    <main id="home" className="relative z-0 bg-white rounded-none x:rounded-md lg:rounded-s-none lg:h-[35rem] lg:-ms-0.5 lg:w-1/2 lg:p-1.5 lg:overflow-auto xl:h-[38rem]">
+    <main id="home" className="relative z-0 bg-white rounded-none x:rounded-md lg:rounded-s-none lg:h-[35rem] lg:-ms-0.5 lg:w-1/2 lg:p-1.5 lg:overflow-auto lg:-me-20 xl:h-[38rem]">
       <section id="about" className="px-6 pt-6">
         <h1 className="title font-bold text-lg"><span className="text-complementary me-1">Sobre</span>mi</h1>
         <p className="mt-2">
