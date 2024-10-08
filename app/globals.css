@@ -169,7 +169,7 @@ div.cube {
 
 
 /* Para pantallas moviles xxs */
-@media (min-width: 320px) {
+@media (min-width: 390px) {
   /* Decorado para foto de perfil */
   div#profileImage::before {
     bottom: -2.5rem;
@@ -182,7 +182,7 @@ div.cube {
 
 
 /* Para pantallas tablet md */
-@media (min-width: 320px) {
+@media (min-width: 768px) {
   /* Decorado para foto de perfil */
   div#profileImage::before {
     width: 20rem;
@@ -206,6 +206,16 @@ div.cube {
     animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+  }
+
+
+  /* Decorado para foto de perfil */
+  div#profileImage::before {
+    bottom: -6.5rem;
+  }
+  
+  div#profileImage::after {
+    bottom: -6.5rem;
   }
 
 

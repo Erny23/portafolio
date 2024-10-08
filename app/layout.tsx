@@ -39,6 +39,7 @@ export default function RootLayout({
 
         {children}
 
+        {/* Cuadros animados de fondo */}
         <div className="cube absolute left-0 size-24 opacity-70" style={{animationDelay: "1s"}}></div>
         <div className="cube absolute left-0 size-24 opacity-70" style={{animationDelay: "8s"}}></div>
         <div className="cube absolute left-[15%] size-48 opacity-50" style={{animationDelay: "11s"}}></div>

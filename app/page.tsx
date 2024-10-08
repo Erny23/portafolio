@@ -2,24 +2,27 @@ import { HiBattery100, HiBattery50 } from "react-icons/hi2";
 
 export default function Home() {
   return (
-    <main id="home" className="relative z-0 bg-white rounded-none x:rounded-md lg:rounded-s-none lg:h-[35rem] lg:-ms-0.5 lg:w-1/2 lg:p-1.5 lg:overflow-auto lg:-me-20 xl:h-[38rem]">
+    <main id="home" className="relative z-0 bg-white rounded-none border-y-8 border-white x:rounded-md lg:rounded-s-none lg:h-[35rem] lg:-ms-0.5 lg:w-1/2 lg:p-1.5 lg:overflow-auto lg:-me-20 xl:h-[38rem]">
       <section id="about" className="px-6 pt-6">
         <h1 className="title font-bold text-lg"><span className="text-complementary me-1">Sobre</span>mi</h1>
         <p className="mt-2">
-          <strong>Lorem ipsum dolor sit</strong>, amet consectetur adipisicing elit. Cum, suscipit laborum odio aspernatur praesentium, delectus nam, sapiente nobis maiores labore quos minus dignissimos numquam molestias tenetur eius natus. Beatae, at.
+          <strong>Desarrollador web con pasión por crear interfaces de usuario intuitivas y visualmente atractivas</strong>
+          , especializado en la creación de interfaces de usuario responsivas y optimizadas para diferentes dispositivos. 
+          Experiencia en el uso de frameworks como <strong>Next</strong>, librerías como <strong>React</strong> y entornos 
+          <strong> NodeJS</strong> para construir aplicaciones web escalables y de alto rendimiento.
         </p>
         <ul className="mt-5">
           <li>
-            <strong>Edad . . . . .</strong> <p className="font-light text-textAlt">24</p>
+            <strong>Edad . . . . .</strong> <p className="ms-1.5 font-light text-textAlt">24</p>
           </li>
           <li>
-            <strong>Residencia . . . . .</strong> <p className="font-light text-textAlt">Venezuela</p>
+            <strong>Residencia . . . . .</strong> <p className="ms-1.5 font-light text-textAlt">Venezuela</p>
           </li>
           <li>
-            <strong>Ocupación . . . . .</strong> <p className="font-light text-textAlt">Freelancer</p>
+            <strong>Ocupación . . . . .</strong> <p className="ms-1.5 font-light text-textAlt">Freelancer</p>
           </li>
           <li>
-            <strong>Dirección . . . . .</strong> <p className="font-light text-textAlt">Carabobo, Valencia</p>
+            <strong>Dirección . . . . .</strong> <p className="ms-1.5 font-light text-textAlt">Carabobo, Valencia</p>
           </li>
         </ul>
       </section>
