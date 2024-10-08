@@ -4,12 +4,13 @@ import SubtitleAnimation from './profileComps/subtitleAnimation';
 
 const CardProfile = () => {
   return (
-    <section id="cardProfile" className="bg-white w-full rounded-none overflow-hidden x:rounded-md x:w-[25rem] xx:w-[30rem] md:w-[35rem] lg:w-80">
+    <section id="cardProfile" className="bg-white w-full rounded-none overflow-hidden x:rounded-md x:w-[25rem] xx:w-[30rem] md:w-[35rem] lg:w-80 xl:w-96">
       <div id="profileImage" className="relative w-full">
         <div className="relative h-[25rem] bg-[url('/profile-2.jpg')] bg-cover bg-[center_top_-2.5rem] bg-no-repeat z-10 
         xxs:h-[30rem]
         md:h-[36rem]
-        lg:h-[22rem]"
+        lg:h-[22rem]
+        xl:h-[25rem]"
         ></div>
       </div>
       <div className="relative px-4 py-6 z-20">
