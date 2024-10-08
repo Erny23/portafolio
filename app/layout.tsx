@@ -30,7 +30,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased block justify-center items-center x:container x:mx-auto x:grid x:gap-3 x:py-8 lg:gap-0 lg:h-screen lg:flex`} >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased block justify-center items-center x:container x:mx-auto x:grid x:gap-3 x:py-8 lg:gap-0 lg:h-screen lg:flex lg:overflow-y-hidden`} >
 
         <nav className="relative z-10">
           <components.navbar />
@@ -39,7 +39,15 @@ export default function RootLayout({
 
         {children}
 
-        <div className="cube absolute left-0 size-24" style={{animationDelay: "2s"}}></div>
+        <div className="cube absolute left-0 size-24 opacity-70" style={{animationDelay: "1s"}}></div>
+        <div className="cube absolute left-0 size-24 opacity-70" style={{animationDelay: "8s"}}></div>
+        <div className="cube absolute left-[15%] size-48 opacity-50" style={{animationDelay: "11s"}}></div>
+        <div className="cube absolute left-1/4 size-48 opacity-50" style={{animationDelay: "5s"}}></div>
+        <div className="cube absolute left-1/2 size-32 opacity-60" style={{animationDelay: "3s"}}></div>
+        <div className="cube absolute left-1/2 size-24 opacity-70" style={{animationDelay: "10s"}}></div>
+        <div className="cube absolute left-3/4 size-48 opacity-50" style={{animationDelay: "6s"}}></div>
+        <div className="cube absolute left-[90%] size-32 opacity-60" style={{animationDelay: "2s"}}></div>
+        <div className="cube absolute left-[85%] size-24 opacity-70" style={{animationDelay: "9s"}}></div>
 
       </body>
     </html>

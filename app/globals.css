@@ -150,11 +150,11 @@ section#about ul li {
 
 @keyframes bottom-appearance {
   from {
-    bottom: -6rem;
+    bottom: -12rem;
     rotate: 0deg;
   }
   to {
-    bottom: 50rem;
+    bottom: 60rem;
     rotate: 100deg
   }
 }
@@ -163,7 +163,8 @@ section#about ul li {
 /* Fondo */
 div.cube {
   background-color: rgba(76, 119, 83, .50);
-  bottom: -6rem;
+  bottom: -12rem;
+  z-index: -10;
 }
 
 
@@ -202,7 +203,7 @@ div.cube {
   /* Fondo */
   div.cube {
     animation-name: bottom-appearance;
-    animation-duration: 10s;
+    animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
