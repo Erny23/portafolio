@@ -135,6 +135,12 @@ section#about ul li {
   display: flex;
 }
 
+section#pricing ul li {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: .5rem;
+}
+
 
 /* Animaciones */
 @keyframes left-appearance {
@@ -162,6 +168,7 @@ section#about ul li {
 
 /* Fondo */
 div.cube {
+  display: none;
   background-color: rgba(76, 119, 83, .50);
   bottom: -12rem;
   z-index: -10;
@@ -202,6 +209,7 @@ div.cube {
 @media (min-width: 1024px) {
   /* Fondo */
   div.cube {
+    display: block;
     animation-name: bottom-appearance;
     animation-duration: 12s;
     animation-timing-function: linear;

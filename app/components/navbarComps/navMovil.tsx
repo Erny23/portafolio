@@ -2,8 +2,8 @@
 import React from 'react';
 import SubtitleAnimation from '../profileComps/subtitleAnimation';
 import { FaUser, FaCode } from "react-icons/fa";
-import { TiThMenu } from "react-icons/ti";
-import { BsChatSquareDotsFill } from "react-icons/bs";
+//import { TiThMenu } from "react-icons/ti";
+//import { BsChatSquareDotsFill } from "react-icons/bs";
 import { BiSolidContact } from "react-icons/bi";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link'
@@ -39,24 +39,24 @@ const NavMovil = () => {
                         <h3>Sobre mi</h3>
                     </Link>
                 </li>
-                <li className={`${router === "/resume" ? "text-complementary" : null} px-1.5`}>
+                {/*<li className={`${router === "/resume" ? "text-complementary" : null} px-1.5`}>
                     <Link href="/resume">
                         <TiThMenu className="w-full" />
                         <h3>Resumen</h3>
                     </Link>
-                </li>
+                </li>*/}
                 <li className={`${router === "/works" ? "text-complementary" : null} px-1.5`}>
                     <Link href="/works">
                         <FaCode className="w-full" />
                         <h3>Trabajos</h3>
                     </Link>
                 </li>
-                <li className={`${router === "/blog" ? "text-complementary" : null} px-1.5`}>
+                {/*<li className={`${router === "/blog" ? "text-complementary" : null} px-1.5`}>
                     <Link href="/blog">
                         <BsChatSquareDotsFill className="w-full" />
                         <h3>Blog</h3>
                     </Link>
-                </li>
+                </li>*/}
                 <li className={`${router === "/contact" ? "text-complementary" : null} px-1.5`}>
                     <Link href="/contact">
                         <BiSolidContact className="w-full" />
@@ -72,24 +72,24 @@ const NavMovil = () => {
                         <h3>Sobre mi</h3>
                     </Link>
                 </li>
-                <li className={`${router === "/resume" ? "text-complementary" : null} px-1.5`}>
+                {/*<li className={`${router === "/resume" ? "text-complementary" : null} px-1.5`}>
                     <Link href="/resume">
                         <TiThMenu className="w-full" />
                         <h3>Resumen</h3>
                     </Link>
-                </li>
+                </li>*/}
                 <li className={`${router === "/works" ? "text-complementary" : null} px-1.5`}>
                     <Link href="/works">
                         <FaCode className="w-full" />
                         <h3>Trabajos</h3>
                     </Link>
                 </li>
-                <li className={`${router === "/blog" ? "text-complementary" : null} px-1.5`}>
+                {/*<li className={`${router === "/blog" ? "text-complementary" : null} px-1.5`}>
                     <Link href="/blog">
                         <BsChatSquareDotsFill className="w-full" />
                         <h3>Blog</h3>
                     </Link>
-                </li>
+                </li>*/}
                 <li className={`${router === "/contact" ? "text-complementary" : null} px-1.5`}>
                     <Link href="/contact">
                         <BiSolidContact className="w-full" />
