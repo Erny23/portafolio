@@ -10,7 +10,7 @@ const SubtitleAnimation = () => {
                     // Same substring at the start will only be typed once, initially
                     'Programador web',
                     2000,
-                    'Freeelance',
+                    'Freeelancer',
                     2000,
                     'Front-end',
                     2000,

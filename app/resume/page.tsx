@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main id="resume" className="bg-white rounded-none x:rounded-md lg:rounded-s-none lg:h-[35rem] lg:-ms-0.5 lg:w-1/2 lg:p-1.5 lg:overflow-auto lg:-me-20 xl:h-[38rem]">
+    <div id="resume" className="page relative z-0 rounded-none bg-white border-y-8 border-white w-full md:rounded-md lg:rounded-s-none">
       <div className="p-6">Resume</div>
-    </main>
+    </div>
   )
 }
 

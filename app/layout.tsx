@@ -30,14 +30,20 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased block justify-center items-center x:container x:mx-auto x:grid x:gap-3 x:py-8 lg:gap-0 lg:h-screen lg:flex lg:overflow-hidden`} >
+      <body className={`${geistSans.variable} ${geistMono.variable} 
+      antialiased block justify-center items-center min-w-80 
+      md:container md:mx-auto md:px-24 md:grid md:gap-3 md:py-8 lg:gap-0 
+      lg:h-screen lg:flex lg:overflow-hidden`
+      } >
 
-        <nav className="relative z-10">
+        <nav className="relative z-10 lg:w-1/3 lg:max-w-md xl:2/5">
           <components.navbar />
           <components.cardProfile />
         </nav>
 
-        {children}
+        <main className="relative lg:w-3/5 lg:-ms-1.5 lg:overflow-auto lg:h-[30rem] xl:w-1/2 xl:h-[36rem] 2xl:h-auto 2xl:max-h-[40rem]">
+          {children}
+        </main>
 
         {/* Cuadros animados de fondo */}
         <div className="cube absolute left-0 size-24 opacity-70" style={{animationDelay: "1s"}}></div>

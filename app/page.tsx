@@ -71,7 +71,7 @@ export default function Home() {
   }
 
   return (
-    <main id="home" className="relative z-0 bg-white rounded-none border-y-8 border-white x:rounded-md lg:rounded-s-none lg:h-[35rem] lg:-ms-0.5 lg:w-1/2 lg:p-1.5 lg:overflow-auto lg:-me-20 xl:h-[38rem]">
+    <div id="home" className="page relative z-0 rounded-none bg-white border-y-8 border-white w-full md:rounded-md lg:rounded-s-none">
       <h1 className="px-6 pt-6">¡Hola! Soy Ernesto, programador web de Venezuela, Carabobo, Valencia.</h1>
       <section id="about" className="px-6 pt-6">
         <h1 className="title font-bold text-lg"><span className="text-complementary me-1">Sobre</span>mi</h1>
@@ -271,6 +271,6 @@ export default function Home() {
           </p>
         </div>
       </section>*/}
-    </main>
+    </div>
   );
 }
