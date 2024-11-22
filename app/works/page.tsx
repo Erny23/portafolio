@@ -1,17 +1,19 @@
 import React from 'react';
 import { Metadata } from "next";
+import List from "../ui/list/list";
+import styles from "../styles/page.module.css";
 
 export const metadata: Metadata = {
   title: 'Mis trabajos',
   description: 'My works',
 }
 
-const page = () => {
+const Page = () => {
   return (
-    <div id="works" className="page relative z-0 rounded-none bg-white border-y-8 border-white w-full md:rounded-md lg:rounded-s-none">
-      <div className="p-6">Works</div>
+    <div className={`${styles.page} relative z-0 rounded-none bg-white border-y-8 border-white w-full md:rounded-md lg:rounded-s-none`}>
+      <List />
     </div>
   )
 }
 
-export default page
+export default Page

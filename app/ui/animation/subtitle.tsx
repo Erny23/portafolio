@@ -2,7 +2,7 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
-const SubtitleAnimation = () => {
+const Subtitle = () => {
     return (
         <>
             <TypeAnimation
@@ -25,4 +25,4 @@ const SubtitleAnimation = () => {
     )
 }
 
-export default SubtitleAnimation
+export default Subtitle

@@ -1,0 +1,28 @@
+/* Animaciones */
+@keyframes left-appearance {
+  from {
+    margin-left: -24rem;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Contenido en general */
+  .page {
+    opacity: 10%;
+  }
+
+  /* Animación del contenido general */
+  .page {
+    animation-name: left-appearance;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    opacity: 100%;
+  }
+}

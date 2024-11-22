@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import SubtitleAnimation from '../profileComps/subtitleAnimation';
+import SubtitleAnimation from '../../animation/subtitle';
 import { FaUser, FaCode } from "react-icons/fa";
 //import { TiThMenu } from "react-icons/ti";
 //import { BsChatSquareDotsFill } from "react-icons/bs";
@@ -8,7 +8,7 @@ import { BiSolidContact } from "react-icons/bi";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link'
 
-const NavMovil = () => {
+const Movil = () => {
 
     const router = usePathname();
 
@@ -65,7 +65,7 @@ const NavMovil = () => {
                 </li>
             </ul>
 
-            <ul id="navMovil" className={`${navFixed ? "top-0" : "-top-20"} transition-all fixed left-0 right-0 z-30 bg-white flex flex-row justify-center pt-6 pb-2.5 font-semibold divide-x-2`}>
+            <ul id="navMovil" className={`${navFixed ? "-top-1" : "-top-20"} transition-all fixed left-0 right-0 z-40 bg-white flex flex-row justify-center pt-6 pb-2.5 font-semibold divide-x-2`}>
                 <li className={`${router === "/" ? "text-complementary" : null} px-1.5`}>
                     <Link href="/">
                         <FaUser className="w-full" />
@@ -101,4 +101,4 @@ const NavMovil = () => {
     )
 }
 
-export default NavMovil
+export default Movil

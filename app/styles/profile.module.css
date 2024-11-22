@@ -1,0 +1,38 @@
+/* Decorado para carta de perfil */
+.card::before {
+  content: "";
+  position: absolute;
+  background-color: var(--complementary);
+  opacity: 50%;
+  border-radius: 0.375rem;
+  top: -1rem;
+  bottom: 1rem;
+  left: -1rem;
+  right: 1rem;
+  z-index: -10;
+}
+
+/* Decorado para foto de perfil */
+.img::before {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 30%;
+  background-color: white;
+  bottom: -18%;
+  left: -3rem;
+  rotate: 20deg;
+  z-index: 20;
+}
+
+.img::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 30%;
+  background-color: white;
+  bottom: -18%;
+  right: -3rem;
+  rotate: -20deg;
+  z-index: 20;
+}

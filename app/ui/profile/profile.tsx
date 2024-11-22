@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 import { FaWhatsapp, FaLinkedin, FaGithub, FaCloudDownloadAlt } from "react-icons/fa";
-import SubtitleAnimation from './profileComps/subtitleAnimation';
+import Subtitle from "../animation/subtitle";
+import styles from "../../styles/profile.module.css";
 
-const CardProfile = () => {
+const Profile = () => {
   return (
-    <section id="cardProfile" className="bg-white w-full rounded-none overflow-hidden md:rounded-md">
-      <div id="profileImage" className="relative">
+    <section className={`${styles.card} bg-white w-full rounded-none overflow-hidden md:rounded-md`}>
+      <div className={`${styles.img} relative`}>
         <div className="relative z-10">
           <img className="size-full" src="profile-3.png" />
         </div>
@@ -13,7 +14,7 @@ const CardProfile = () => {
       <div className="relative px-4 py-6 z-30">
         <h1 className="mb-3 font-bold text-3xl text-tittle text-center">Ernesto Fava</h1>
         <div className="mb-4 font-medium text-complementary text-center">
-          <SubtitleAnimation />
+          <Subtitle />
         </div>
         <div className="flex justify-center gap-4">
           <a href="https://wa.me/584128849604" target="_blank">
@@ -39,4 +40,4 @@ const CardProfile = () => {
   )
 }
 
-export default CardProfile
+export default Profile

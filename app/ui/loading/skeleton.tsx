@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LoadingSkeleton = () => {
+const Skeleton = () => {
     return (
         <section id="loadingSkeleton" className="animate-pulse px-6 pt-6">
             <h1 className="rounded-md w-1/3 h-4 bg-zinc-300"></h1>
@@ -56,4 +56,4 @@ const LoadingSkeleton = () => {
     )
 }
 
-export default LoadingSkeleton
+export default Skeleton

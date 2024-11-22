@@ -1,0 +1,30 @@
+/* Fondo */
+.cube {
+  display: none;
+  background-color: rgba(76, 119, 83, 0.5);
+  bottom: -12rem;
+  z-index: -10;
+}
+
+@keyframes bottom-appearance {
+  from {
+    bottom: -12rem;
+    rotate: 0deg;
+  }
+  to {
+    bottom: 60rem;
+    rotate: 100deg;
+  }
+}
+
+/* Para pantallas pc lg */
+@media (min-width: 1024px) {
+  /* Fondo */
+  .cube {
+    display: block;
+    animation-name: bottom-appearance;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}

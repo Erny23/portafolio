@@ -1,13 +1,14 @@
 "use client";
 import { TypeAnimation } from 'react-type-animation';
-import { PiCardsFill } from "react-icons/pi";
-import { MdDesignServices, MdOutlineDataArray, MdRule, MdMiscellaneousServices } from "react-icons/md";
-import { AiFillProduct } from "react-icons/ai";
-import { FaShoppingCart } from "react-icons/fa";
-import { FaDatabase } from "react-icons/fa6";
-import { BsDatabaseFillGear } from "react-icons/bs";
-import { TbFileDatabase } from "react-icons/tb";
-import { IoMdSettings } from "react-icons/io";
+//import { PiCardsFill } from "react-icons/pi";
+//import { MdDesignServices, MdOutlineDataArray, MdRule, MdMiscellaneousServices } from "react-icons/md";
+//import { AiFillProduct } from "react-icons/ai";
+//import { FaShoppingCart } from "react-icons/fa";
+//import { FaDatabase } from "react-icons/fa6";
+//import { BsDatabaseFillGear } from "react-icons/bs";
+//import { TbFileDatabase } from "react-icons/tb";
+//import { IoMdSettings } from "react-icons/io";
+import styles from "./styles/page.module.css";
 
 export default function Home() {
 
@@ -71,7 +72,7 @@ export default function Home() {
   }
 
   return (
-    <div id="home" className="page relative z-0 rounded-none bg-white border-y-8 border-white w-full md:rounded-md lg:rounded-s-none">
+    <div className={`${styles.page} relative z-0 rounded-none bg-white border-y-8 border-white w-full md:rounded-md lg:rounded-s-none`}>
       <h1 className="px-6 pt-6">¡Hola! Soy Ernesto, programador web de Venezuela, Carabobo, Valencia.</h1>
       <section id="about" className="px-6 pt-6">
         <h1 className="title font-bold text-lg"><span className="text-complementary me-1">Sobre</span>mi</h1>
@@ -115,7 +116,7 @@ export default function Home() {
             <div className="w-full py-2"></div>
             <h5 className="font-semibold">{TitleAnimation(["Tienda online", "Blog personal", "Landing page", ""])}</h5>
             <p>
-              Ofrezco diferentes de servicios de desarrollo web, desde sitios web estáticos hasta aplicaciones web complejas,
+              Ofrezco diferentes servicios de desarrollo web, desde sitios web estáticos hasta aplicaciones web complejas,
               adaptados a las necesidades específicas de tu negocio.
             </p>
           </div>
@@ -129,148 +130,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="pricing" className="p-6 border-t-2">
-        <h1 className="title font-bold text-lg"><span className="text-complementary">P</span>recios</h1>
-        <div className="block justify-around 2xl:flex 2xl:flex-wrap">
-          <div className="mt-5">
-            <h5 className="font-semibold">{TitleAnimation(["Front-end", "Diseño de interfaz", "Interacción con el usuario", "Visualización de datos"])}</h5>
-            <ul className="list-inside list-none my-3 ms-4">
-              <li>
-                <MdDesignServices className="size-6 text-complementary" />
-                <p className="mx-2">
-                  Diseño de interfaz de usuario
-                </p>
-                <h6 className="flex flex-row items-stretch font-bold">
-                  <span className="text-xs self-start">$</span>
-                  50
-                </h6>
-              </li>
-              <li>
-                <PiCardsFill className="size-6 text-complementary" />
-                <p className="mx-2">
-                  Creación de páginas
-                </p>
-                <h6 className="flex flex-row items-stretch font-bold">
-                  <span className="text-xs self-start">$</span>
-                  90
-                  <span className="text-xs self-end ms-0.5 mb-0.5">c/u</span>
-                </h6>
-              </li>
-              <li>
-                <AiFillProduct className="size-6 text-complementary" />
-                <p className="mx-2">
-                  Adición de productos al listado
-                </p>
-                <h6 className="flex flex-row items-stretch font-bold">
-                  <span className="text-xs self-start">$</span>
-                  2
-                  <span className="text-xs self-end ms-0.5 mb-0.5">c/u</span>
-                </h6>
-              </li>
-              <li>
-                <FaShoppingCart className="size-6 text-complementary" />
-                <p className="mx-2">
-                  Funciones adicionales
-                </p>
-                <h6 className="flex flex-row items-stretch font-bold">
-                  <span className="text-xs self-start">$</span>
-                  20
-                  <span className="text-xs self-end ms-0.5 mb-0.5">c/u</span>
-                </h6>
-              </li>
-            </ul>
-          </div>
-          <div className="mt-5">
-            <h5 className="font-semibold">{TitleAnimation(["Back-end", "Procesamiento de datos", "Seguridad", ""])}</h5>
-            <ul className="list-inside list-none my-3 ms-4">
-              <li>
-                <MdOutlineDataArray className="size-6 text-complementary" />
-                <p className="mx-2">
-                  Procesamiento de datos
-                </p>
-                <h6 className="flex flex-row items-stretch font-bold">
-                  <span className="text-xs self-start">$</span>
-                  15
-                </h6>
-              </li>
-              <li>
-                <IoMdSettings className="size-6 text-complementary" />
-                <p className="mx-2">
-                  Gestión de la base de datos
-                </p>
-                <h6 className="flex flex-row items-stretch font-bold">
-                  <span className="text-xs self-start">$</span>
-                  25
-                </h6>
-              </li>
-              <li>
-                <MdRule className="size-6 text-complementary" />
-                <p className="mx-2">
-                  Lógica de negocio
-                </p>
-                <h6 className="flex flex-row items-stretch font-bold">
-                  Consultar
-                </h6>
-              </li>
-              <li>
-                <MdMiscellaneousServices className="size-6 text-complementary" />
-                <p className="mx-2">
-                  Integración con otros sistemas
-                </p>
-                <h6 className="flex flex-row items-stretch font-bold">
-                  Consultar
-                </h6>
-              </li>
-            </ul>
-          </div>
-          <div className="mt-5">
-            <h5 className="font-semibold">{TitleAnimation(["Base de datos", "Almacenamiento de datos", "Integración de sistemas", "Seguridad"])}</h5>
-            <ul className="list-inside list-none my-3 ms-4">
-              <li>
-                <FaDatabase className="size-6 text-complementary" />
-                <p className="mx-2">
-                  Creación de bases de datos
-                </p>
-                <h6 className="flex flex-row items-stretch font-bold">
-                  <span className="text-xs self-start">$</span>
-                  50
-                </h6>
-              </li>
-              <li>
-                <BsDatabaseFillGear className="size-6 text-complementary" />
-                <p className="mx-2">
-                  Edición de estructura de la bases de datos
-                </p>
-                <h6 className="flex flex-row items-stretch font-bold">
-                  <span className="text-xs self-start">$</span>
-                  5
-                </h6>
-              </li>
-              <li>
-                <TbFileDatabase className="size-6 text-complementary" />
-                <p className="mx-2">
-                  Exportar información de la bases de datos a excel
-                </p>
-                <h6 className="flex flex-row items-stretch font-bold">
-                  <span className="text-xs self-start">$</span>
-                  5
-                </h6>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      {/*<section id="clients" className="p-6 border-t-2">
-        <h1 className="title font-bold text-lg"><span className="text-complementary">C</span>lientes</h1>
-      </section>
-      <section id="testimonies" className="p-6 border-t-2">
-        <h1 className="title font-bold text-lg"><span className="text-complementary">T</span>estimonios</h1>
-        <div className='p-8'>
-          <p className='font-light italic opacity-[0.65]'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, voluptatibus. Incidunt, natus! Voluptatum maiores cumque ducimus aliquam, quas fugit eum, soluta vero commodi, qui ipsum suscipit sit voluptatem recusandae fugiat.
-          </p>
-        </div>
-      </section>*/}
     </div>
   );
 }

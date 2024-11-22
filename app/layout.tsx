@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
-import * as components from "./components";
+import "./styles/globals.css";
+import * as ui from "./ui"
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "./assets/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "./assets/fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -37,24 +37,19 @@ export default function RootLayout({
       } >
 
         <nav className="relative z-10 lg:w-1/3 lg:max-w-md xl:2/5">
-          <components.navbar />
-          <components.cardProfile />
+          <ui.navbar />
+          <ui.profile />
         </nav>
 
-        <main className="relative lg:w-3/5 lg:-ms-1.5 lg:overflow-auto lg:h-[30rem] xl:w-1/2 xl:h-[36rem] 2xl:h-auto 2xl:max-h-[40rem]">
+        <main className="relative 
+        lg:w-3/5 lg:-ms-1.5 lg:overflow-auto lg:h-[30rem] 
+        xl:w-1/2 xl:h-[36rem] 
+        2xl:h-[40rem]"
+        >
           {children}
         </main>
-
-        {/* Cuadros animados de fondo */}
-        <div className="cube absolute left-0 size-24 opacity-70" style={{animationDelay: "1s"}}></div>
-        <div className="cube absolute left-0 size-24 opacity-70" style={{animationDelay: "8s"}}></div>
-        <div className="cube absolute left-[15%] size-48 opacity-50" style={{animationDelay: "11s"}}></div>
-        <div className="cube absolute left-1/4 size-48 opacity-50" style={{animationDelay: "5s"}}></div>
-        <div className="cube absolute left-1/2 size-32 opacity-60" style={{animationDelay: "3s"}}></div>
-        <div className="cube absolute left-1/2 size-24 opacity-70" style={{animationDelay: "10s"}}></div>
-        <div className="cube absolute left-3/4 size-48 opacity-50" style={{animationDelay: "6s"}}></div>
-        <div className="cube absolute left-[90%] size-32 opacity-60" style={{animationDelay: "2s"}}></div>
-        <div className="cube absolute left-[85%] size-24 opacity-70" style={{animationDelay: "9s"}}></div>
+        
+        <ui.background />
 
       </body>
     </html>

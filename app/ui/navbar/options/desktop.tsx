@@ -7,7 +7,7 @@ import { BiSolidContact } from "react-icons/bi";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link'
 
-const NavDesktop = () => {
+const Desktop = () => {
 
     const router = usePathname();
 
@@ -49,4 +49,4 @@ const NavDesktop = () => {
     )
 }
 
-export default NavDesktop
+export default Desktop
