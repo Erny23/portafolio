@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import data from "../../assets/data.json";
 
 const List = () => {
 
@@ -8,7 +9,7 @@ const List = () => {
     return (
         <>
             <section className="flex justify-between px-6 py-6">
-                <h1 className="title font-bold text-lg"><span className="text-complementary me-1">Trabajos</span>recientes</h1>
+                <h1 className="title flex flex-wrap font-bold text-lg"><span className="text-complementary me-1">Trabajos</span><span>recientes</span></h1>
                 <ul className="flex gap-3">
                     <li>
                         <button className={`${selected === "all" ? "text-complementary font-semibold" : null}`} onClick={() => setSelected("all")}>Todo</button>
@@ -25,20 +26,19 @@ const List = () => {
                 </ul>
             </section>
             <div className="mb-5 w-full h-1 border-t-2"></div>
-            <section className="flex justify-center px-6 w-full">
-                {selected === "all" ? (
-                    <div className="flex flex-wrap gap-3">
-                        <div className="w-52 h-80 bg-foreground rounded-lg text-white"></div>
-                        <div className="w-52 h-52 bg-foreground rounded-lg text-white"></div>
-                        <div className="w-52 h-40 bg-foreground rounded-lg text-white"></div>
-                    </div>
-                ) : (
-                    <div className="flex flex-wrap gap-3">
-                        <div className={`${selected === "videos" ? "block" : "hidden"} w-52 h-80 bg-foreground rounded-lg text-white`}></div>
-                        <div className={`${selected === "photos" ? "block" : "hidden"} w-52 h-52 bg-foreground rounded-lg text-white`}></div>
-                        <div className={`${selected === "others" ? "block" : "hidden"} w-52 h-40 bg-foreground rounded-lg text-white`}></div>
-                    </div>
-                )}
+            <section className="flex justify-center">
+                <div className="flex flex-wrap gap-10 w-11/12">
+                    {data.map((item, index) => {
+                        if (selected === "all" || item.category === selected) {
+                            return (
+                                <div key={index}>
+                                    <img src={item.img} alt={item.title} className="w-1/2" />
+                                </div>
+                            )
+                        }
+                        return null;
+                    })}
+                </div>
             </section>
         </>
     )
