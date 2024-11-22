@@ -72,7 +72,7 @@ export default function Home() {
   }
 
   return (
-    <div className={`${styles.page} relative z-0 rounded-none bg-white border-y-8 border-white w-full md:rounded-md lg:rounded-s-none`}>
+    <div className={`${styles.page} relative z-0 rounded-none bg-white border-y-8 border-white w-full h-full md:rounded-md lg:overflow-y-auto lg:rounded-s-none`}>
       <h1 className="px-6 pt-6">¡Hola! Soy Ernesto, programador web de Venezuela, Carabobo, Valencia.</h1>
       <section id="about" className="px-6 pt-6">
         <h1 className="title font-bold text-lg"><span className="text-complementary me-1">Sobre</span>mi</h1>

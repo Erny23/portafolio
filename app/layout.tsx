@@ -42,7 +42,7 @@ export default function RootLayout({
         </nav>
 
         <main className="relative 
-        lg:w-3/5 lg:-ms-1.5 lg:overflow-auto lg:h-[30rem] 
+        lg:w-3/5 lg:-ms-1.5 lg:h-[30rem] 
         xl:w-1/2 xl:h-[36rem] 
         2xl:h-[40rem]"
         >
