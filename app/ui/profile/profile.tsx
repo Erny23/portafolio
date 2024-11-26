@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { FaWhatsapp, FaLinkedin, FaGithub, FaCloudDownloadAlt } from "react-icons/fa";
 import Subtitle from "../animation/subtitle";
@@ -8,6 +9,7 @@ const Profile = () => {
     <section className={`${styles.card} bg-white w-full rounded-none overflow-hidden md:rounded-md`}>
       <div className={`${styles.img} relative`}>
         <div className="relative z-10">
+          {/*eslint-disable-next-line jsx-a11y/alt-text*/}
           <img className="size-full" src="profile-3.png" />
         </div>
       </div>

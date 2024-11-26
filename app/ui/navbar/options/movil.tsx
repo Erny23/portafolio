@@ -12,11 +12,11 @@ const Movil = () => {
 
     const router = usePathname();
 
-    const [ navFixed, setNavFixed ] = React.useState(false);
+    const [ fixed, setFixed ] = React.useState(false);
 
     React.useEffect(() => {
         const handleScroll = () => {
-            setNavFixed(window.scrollY > 200); // Muestra el botón cuando se haya scrollado más de 200px
+            setFixed(window.scrollY > 200); // Muestra el botón cuando se haya scrollado más de 200px
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -32,7 +32,7 @@ const Movil = () => {
             <h1 className="font-bold text-xl ps-5 pt-3">Ernesto Fava</h1>
             <h2 className="text-complementary ps-5 pb-2.5"><SubtitleAnimation /></h2>
             <div className="h-[.08rem] mx-1 bg-gray-300"></div>
-            <ul id="navMovil" className="flex flex-row justify-center py-2.5 font-semibold divide-x-2">
+            <ul className="flex flex-row justify-center py-2.5 font-semibold divide-x-2">
                 <li className={`${router === "/" ? "text-complementary" : null} px-1.5`}>
                     <Link href="/">
                         <FaUser className="w-full" />
@@ -65,7 +65,7 @@ const Movil = () => {
                 </li>
             </ul>
 
-            <ul id="navMovil" className={`${navFixed ? "-top-1" : "-top-20"} transition-all fixed left-0 right-0 z-40 bg-white flex flex-row justify-center pt-6 pb-2.5 font-semibold divide-x-2`}>
+            <ul className={`${fixed ? "-top-1" : "-top-20"} transition-all fixed left-0 right-0 z-40 bg-white flex flex-row justify-center pt-6 pb-2.5 font-semibold divide-x-2`}>
                 <li className={`${router === "/" ? "text-complementary" : null} px-1.5`}>
                     <Link href="/">
                         <FaUser className="w-full" />

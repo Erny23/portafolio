@@ -27,12 +27,13 @@ const List = () => {
             </section>
             <div className="mb-5 w-full h-1 border-t-2"></div>
             <section className="flex justify-center">
-                <div className="flex flex-wrap gap-10 w-11/12">
+                <div className="flex flex-wrap items-start justify-between gap-6 w-10/12 xl:gap-10 xl:w-11/12">{/*flex flex-wrap items-start justify-between gap-6 w-10/12 xl:gap-10 xl:w-11/12*/}
                     {data.map((item, index) => {
                         if (selected === "all" || item.category === selected) {
                             return (
-                                <div key={index}>
-                                    <img src={item.img} alt={item.title} className="w-1/2" />
+                                <div className="relative h-48 w-48 xl:w-[14.2rem] 2xl:w-72 3xl:w-[23.5rem]" key={index}>
+                                    {/*eslint-disable-next-line @next/next/no-img-element*/}
+                                    <img src={item.img} alt={item.title} className="absolute top-0 left-0 right-0" />
                                 </div>
                             )
                         }

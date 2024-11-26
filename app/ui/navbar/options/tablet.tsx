@@ -14,7 +14,7 @@ const NavTablet = () => {
     return (
         <>
             <div className="fixed left-0 z-30 sm:left-auto">
-                <ul id="navTablet" className="bg-white py-3 px-2 rounded-md divide-y-2 sm:absolute sm:-left-[5.8rem] md:top-8">
+                <ul className="bg-white py-3 px-2 rounded-md divide-y-2 sm:absolute sm:-left-[5.8rem] md:top-8">
                     <li className={`${router === "/" ? "text-complementary" : null} py-3`}>
                         <Link href="/">
                             <FaUser className="w-full" />

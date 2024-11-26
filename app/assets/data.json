@@ -10,14 +10,14 @@
         "id": 2,
         "category": "videos",
         "title": "pcAmazing2",
-        "img": "/pcAmazing.jpg",
+        "img": "/pcAmazing2.jpg",
         "content": ""
     },
     {
         "id": 3,
         "category": "others",
         "title": "pcAmazing3",
-        "img": "/pcAmazing.jpg",
+        "img": "/pcAmazing3.jpg",
         "content": ""
     }
 ]
