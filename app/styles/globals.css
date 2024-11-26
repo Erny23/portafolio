@@ -23,6 +23,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 5px;

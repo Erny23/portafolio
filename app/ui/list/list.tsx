@@ -26,8 +26,8 @@ const List = () => {
                 </ul>
             </section>
             <div className="mb-5 w-full h-1 border-t-2"></div>
-            <section className="flex justify-center">
-                <div className="flex flex-wrap items-start justify-between gap-6 w-10/12 xl:gap-10 xl:w-11/12">{/*flex flex-wrap items-start justify-between gap-6 w-10/12 xl:gap-10 xl:w-11/12*/}
+            <section className="">
+                <div className="">
                     {data.map((item, index) => {
                         if (selected === "all" || item.category === selected) {
                             return (

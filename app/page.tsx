@@ -73,9 +73,9 @@ export default function Home() {
 
   return (
     <div className={`${styles.page} relative z-0 rounded-none bg-white border-y-8 border-white w-full h-full md:rounded-md lg:overflow-y-auto lg:rounded-s-none`}>
-      <h1 className="px-6 pt-6">¡Hola! Soy Ernesto, programador web de Venezuela, Carabobo, Valencia.</h1>
+      <h2 className="px-6 pt-6">¡Hola! Soy Ernesto, programador web de Venezuela, Carabobo, Valencia.</h2>
       <section id="about" className="px-6 pt-6">
-        <h1 className="title font-bold text-lg"><span className="text-complementary me-1">Sobre</span>mi</h1>
+        <h1 className="title"><span className="text-complementary me-1">Sobre</span>mi</h1>
         <p className="mt-2">
           En 2020, me encontraba trabajando como analista de marketing cuando me sumergí en el mundo de la programación,
           enfocándome en el desarrollo web. He realizado proyectos para poner en práctica mis conocimientos y crear
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
       <br />
       <section id="services" className="p-6 border-t-2">
-        <h1 className="title font-bold text-lg"><span className="text-complementary me-1">Mis</span>servicios</h1>
+        <h1 className="title"><span className="text-complementary me-1">Mis</span>servicios</h1>
         <div className="mt-5 flex flex-row gap-3 divide-x-2">
           <div className="w-1/2">
             <h5 className="font-semibold">{TitleAnimation(["Diseño personalizado", "Responsivo", "Optimizado", ""])}</h5>

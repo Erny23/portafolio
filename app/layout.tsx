@@ -36,12 +36,12 @@ export default function RootLayout({
       lg:h-screen lg:flex lg:overflow-hidden`
       } >
 
-        <nav className="relative z-10 lg:w-1/3 lg:max-w-md xl:2/5">
+        <header className="relative z-50 lg:ms-24">
           <ui.navbar />
           <ui.profile />
-        </nav>
+        </header>
 
-        <main className="relative lg:w-3/5 lg:-ms-1.5 lg:h-[30rem] xl:w-1/2 xl:h-[36rem] 2xl:h-[40rem]">
+        <main className="relative lg:min-w-[31rem] lg:max-w-xl lg:h-[34rem]">
           {children}
         </main>
         
