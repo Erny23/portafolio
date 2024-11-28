@@ -27,7 +27,7 @@ const List = () => {
             </section>
             <div className="mb-5 w-full h-1 border-t-2"></div>
             <section className="container mx-auto px-4">
-                <div className="grid grid-rows-3 grid-cols-2 gap-10">
+                <div className="grid grid-rows-6 grid-cols-2 gap-10">
                     <div className={`${selected === "photos" || selected === "all" ? `${style.block}` : `${style.hidden}`} row-span-1`}>
                         {/*eslint-disable-next-line @next/next/no-img-element*/}
                         <img className="absolute top-0" src="/pcAmazing.jpg" alt="pcAmazing" />
@@ -42,7 +42,15 @@ const List = () => {
                     </div>
                     <div className={`${selected === "photos" || selected === "all" ? `${style.block}` : `${style.hidden}`} row-span-1`}>
                         {/*eslint-disable-next-line @next/next/no-img-element*/}
-                        <img className="absolute top-0" src="/pcAmazing.jpg" alt="pcAmazing" />
+                        <img className="absolute top-0" src="/bloque-1.jpg" alt="pcAmazing" />
+                    </div>
+                    <div className={`${selected === "videos" || selected === "all" ? `${style.block}` : `${style.hidden}`} row-span-2`}>
+                        {/*eslint-disable-next-line @next/next/no-img-element*/}
+                        <img className="absolute top-0" src="/bloque-2.jpg" alt="pcAmazing2" />
+                    </div>
+                    <div className={`${selected === "others" || selected === "all" ? `${style.block}` : `${style.hidden}`} row-span-3`}>
+                        {/*eslint-disable-next-line @next/next/no-img-element*/}
+                        <img className="absolute top-0" src="/bloque-3.jpg" alt="pcAmazing3" />
                     </div>
                 </div>
             </section>

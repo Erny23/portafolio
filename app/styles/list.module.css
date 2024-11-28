@@ -17,3 +17,10 @@
     width: 0;
     height: 0;
 }
+
+@media (min-width: 1280px) {
+    .block {
+        width: 17rem;
+        height: 9.5rem;
+    }
+}
