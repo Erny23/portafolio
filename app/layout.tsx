@@ -41,7 +41,7 @@ export default function RootLayout({
           <ui.profile />
         </header>
 
-        <main className="relative lg:min-w-[31rem] lg:max-w-xl lg:h-[34rem] xl:max-w-2xl">
+        <main className="relative lg:min-w-[31rem] lg:max-w-xl lg:h-[34rem] xl:min-w-[38rem] xl:max-w-2xl">
           {children}
         </main>
         
