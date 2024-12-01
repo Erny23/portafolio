@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import style from "../../styles/list.module.css";
+import Modal from "../modal/modal";
 
 const List = () => {
 
@@ -29,12 +30,17 @@ const List = () => {
             <section className="container mx-auto px-4">
                 <div className="grid grid-rows-5 grid-cols-2 gap-10">
                     <div className={`${selected === "photos" || selected === "all" ? `${style.block}` : `${style.hidden}`} row-span-1`}>
+                        <div className="absolute inset-0 h-[7.3rem] z-10 xl:h-auto">
+                            <Modal src={"/portafolio1.jpg"} type={"photo"} />
+                        </div>
                         {/*eslint-disable-next-line @next/next/no-img-element*/}
-                        <img className="absolute top-0" src="/portafolio1.jpg" alt="pcAmazing" />
+                        <img className="absolute top-0 z-0" src="/portafolio1.jpg" alt="pcAmazing" />
                     </div>
                     <div className={`${selected === "videos" || selected === "all" ? `${style.block}` : `${style.hidden}`} row-span-2`}>
-                        {/*eslint-disable-next-line @next/next/no-img-element*/}
-                        <div className="absolute top-0 h-[21.5rem] overflow-hidden">
+                        <div className="absolute inset-0 h-[17rem] z-10 xl:h-[21.5rem]">
+                            <Modal src={"/portfolio1.webm"} type={"video"} />
+                        </div>
+                        <div className="absolute top-0 h-[17rem] overflow-hidden xl:h-[21.5rem]">
                             <video autoPlay loop muted>
                                 <source src="/portfolio1.webm" type="video/webm" />
                                 Tu navegador no soporta el elemento de video.
@@ -42,14 +48,23 @@ const List = () => {
                         </div>
                     </div>
                     <div className={`${selected === "photos" || selected === "all" ? `${style.block}` : `${style.hidden}`} row-span-1`}>
+                        <div className="absolute inset-0 h-[7.3rem] z-10 xl:h-auto">
+                            <Modal src={"/pcAmazing.jpg"} type={"photo"} />
+                        </div>
                         {/*eslint-disable-next-line @next/next/no-img-element*/}
                         <img className="absolute inset-0" src="/pcAmazing.jpg" alt="pcAmazing" />
                     </div>
                     <div className={`${selected === "videos" || selected === "all" ? `${style.block}` : `${style.hidden}`} row-span-2`}>
+                        <div className="absolute inset-0 h-[16rem] z-10 xl:h-[21.5rem]">
+                            <Modal src={"/pcAmazing2.jpg"} type={"photo"} />
+                        </div>
                         {/*eslint-disable-next-line @next/next/no-img-element*/}
                         <img className="absolute top-0" src="/pcAmazing2.jpg" alt="pcAmazing2" />
                     </div>
                     <div className={`${selected === "others" || selected === "all" ? `${style.block}` : `${style.hidden}`} row-span-3`}>
+                        <div className="absolute inset-0 h-[24.5rem] z-10 xl:h-[32rem]">
+                            <Modal src={"/pcAmazing3.jpg"} type={"photo"} />
+                        </div>
                         {/*eslint-disable-next-line @next/next/no-img-element*/}
                         <img className="absolute top-0" src="/pcAmazing3.jpg" alt="pcAmazing3" />
                     </div>
