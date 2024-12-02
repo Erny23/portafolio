@@ -4,7 +4,7 @@ import Form from '../ui/form/form';
 import styles from "../styles/page.module.css";
 
 export const metadata: Metadata = {
-  title: 'Mis contactos',
+  title: 'Contacto',
   description: 'My contacts',
 }
 

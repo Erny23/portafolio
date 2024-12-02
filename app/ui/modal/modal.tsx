@@ -5,6 +5,7 @@ import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 //import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import { FaImage } from "react-icons/fa";
 import { PiVideoFill } from "react-icons/pi";
+import { IoClose } from "react-icons/io5";
 
 type props = {
     src: string,
@@ -29,6 +30,9 @@ const Modal = (props: props) => {
 
                 <div className="fixed inset-0 z-10">
                     <div className="relative size-full flex justify-center items-center">
+                        <div className="absolute z-20 top-5 right-5 bg-gray-400/50 rounded-lg p-0.5 cursor-pointer" onClick={() => setOpen(false)}>
+                            <IoClose className="text-white size-8" />
+                        </div>
                         <DialogPanel
                             transition
                             className="relative transform shadow-xl transition-all max-w-5xl

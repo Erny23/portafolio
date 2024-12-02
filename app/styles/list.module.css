@@ -4,8 +4,8 @@
     transition-duration: 150ms;
     transition-delay: 500ms;
     position: relative;
-    width: 13rem;
-    height: 7rem;
+    width: 8rem;
+    height: 4rem;
 }
 
 .hidden {
@@ -18,9 +18,131 @@
     height: 0;
 }
 
+.small {
+    position: absolute;
+    inset: 0px;
+    height: 4.5rem;
+    z-index: 10;
+}
+
+.med {
+    height: 10.5rem;
+}
+
+.large {
+    height: 15.3rem;
+}
+
+@media (min-width: 390px) {
+    .block {
+        width: 10rem;
+        height: 6rem;
+    }
+
+    .small {
+        height: 5.7rem;
+    }
+    
+    .med {
+        height: 12.5rem;
+    }
+    
+    .large {
+        height: 19rem;
+    }
+}
+
+@media (min-width: 414px) {
+    .block {
+        width: 10.5rem;
+        height: 5rem;
+    }
+
+    .small {
+        height: 6rem;
+    }
+    
+    .med {
+        height: 13rem;
+    }
+    
+    .large {
+        height: 20rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .block {
+        width: 17rem;
+        height: 9rem;
+    }
+
+    .small {
+        height: 9.5rem;
+    }
+
+    .med {
+        height: 21rem;
+    }
+
+    .large {
+        height: 32rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .block {
+        width: 15.5rem;
+        height: 9rem;
+    }
+
+    .small {
+        height: 7.3rem;
+    }
+
+    .med {
+        height: 19.5rem;
+    }
+
+    .large {
+        height: 29.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .block {
+        width: 13rem;
+        height: 7rem;
+    }
+
+    .small {
+        height: 7.3rem;
+    }
+
+    .med {
+        height: 17rem;
+    }
+
+    .large {
+        height: 24.5rem;
+    }
+}
+
 @media (min-width: 1280px) {
     .block {
         width: 17rem;
         height: 9.5rem;
+    }
+
+    .small {
+        height: auto;
+    }
+
+    .med {
+        height: 21.5rem;
+    }
+
+    .large {
+        height: 32rem;
     }
 }
