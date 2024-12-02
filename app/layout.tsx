@@ -45,7 +45,8 @@ export default function RootLayout({
           {children}
         </main>
         
-        <ui.background />
+        {/*<ui.background />*/}
+        <ui.altBackground />
 
       </body>
     </html>

@@ -1,0 +1,33 @@
+/* Fondo */
+.cube {
+    display: none;
+    background-color: #f8fafc;
+    filter: blur(4px);
+    top: -12rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 9999px;
+    z-index: -10;
+  }
+  
+  @keyframes top-appearance {
+    from {
+      top: -12rem;
+    }
+    to {
+      top: 60rem;
+    }
+  }
+  
+  /* Para pantallas pc lg */
+  @media (min-width: 1024px) {
+    /* Fondo */
+    .cube {
+      display: block;
+      animation-name: top-appearance;
+      animation-duration: 12s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  }
+  
