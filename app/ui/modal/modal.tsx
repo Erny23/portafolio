@@ -18,8 +18,12 @@ const Modal = (props: props) => {
 
     return (
         <>
-            <button className="flex justify-center items-center size-full bg-zinc-800/60 opacity-0 transition-opacity duration-200 hover:opacity-100" onClick={() => setOpen(true)}>
-                {props.type === "photo" ? (<FaImage className="text-zinc-200 size-16" />) : (<PiVideoFill className="text-zinc-200 size-16" />)}
+            <button className="flex justify-center items-center size-full lg:bg-zinc-800/60 lg:opacity-0 lg:transition-opacity lg:duration-200 lg:hover:opacity-100" onClick={() => setOpen(true)}>
+                {props.type === "photo" ? (
+                        <FaImage className="hidden text-zinc-200 size-16 lg:block" />
+                    ) : (
+                        <PiVideoFill className="hidden text-zinc-200 size-16 lg:block" />
+                )}
             </button>
 
             <Dialog open={open} onClose={setOpen} className="relative z-50">
