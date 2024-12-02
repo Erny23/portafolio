@@ -31,7 +31,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/bariloche-en-invierno.jpg");
+  background-image: url("/bariloche-en-invierno.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
