@@ -1,3 +1,18 @@
+/* Estilo de las páginas */
+.page {
+  position: relative;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) /* #ffffff */;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity)) /* #ffffff */;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  border-top-width: 8px;
+  border-bottom-width: 8px;
+  z-index: 0;
+}
+
 /* Animaciones */
 @keyframes left-appearance {
   from {
@@ -10,9 +25,18 @@
   }
 }
 
+@media (min-width: 768px) {
+  .page {
+    border-radius: 0.375rem /* 6px */;
+  }
+}
+
 @media (min-width: 1024px) {
   /* Contenido en general */
   .page {
+    overflow-y: auto;
+    border-start-start-radius: 0px;
+    border-end-start-radius: 0px;
     opacity: 10%;
   }
 

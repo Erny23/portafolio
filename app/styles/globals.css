@@ -87,6 +87,11 @@ button#downloadCV:hover span {
   left: -.6rem;
 }
 
+.title span {
+  color: var(--complementary);
+  margin-inline-end: 0.25rem /* 4px */;
+}
+
 @media (min-width: 1024px) {
   body::before {
     content: "";

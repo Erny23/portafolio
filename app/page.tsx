@@ -1,13 +1,5 @@
 "use client";
 import { TypeAnimation } from 'react-type-animation';
-//import { PiCardsFill } from "react-icons/pi";
-//import { MdDesignServices, MdOutlineDataArray, MdRule, MdMiscellaneousServices } from "react-icons/md";
-//import { AiFillProduct } from "react-icons/ai";
-//import { FaShoppingCart } from "react-icons/fa";
-//import { FaDatabase } from "react-icons/fa6";
-//import { BsDatabaseFillGear } from "react-icons/bs";
-//import { TbFileDatabase } from "react-icons/tb";
-//import { IoMdSettings } from "react-icons/io";
 import styles from "./styles/page.module.css";
 
 export default function Home() {
@@ -72,10 +64,10 @@ export default function Home() {
   }
 
   return (
-    <div className={`${styles.page} relative z-0 rounded-none bg-white border-y-8 border-white w-full h-full md:rounded-md lg:overflow-y-auto lg:rounded-s-none`}>
+    <div className={`${styles.page}`}>
       <h2 className="px-6 pt-6">¡Hola! Soy Ernesto, programador web de Venezuela, Carabobo, Valencia.</h2>
       <section id="about" className="px-6 pt-6">
-        <h1 className="title"><span className="text-complementary me-1">Sobre</span>mi</h1>
+        <h1 className="title"><span>Sobre</span>mi</h1>
         <p className="mt-2">
           En 2020, me encontraba trabajando como analista de marketing cuando me sumergí en el mundo de la programación,
           enfocándome en el desarrollo web. He realizado proyectos para poner en práctica mis conocimientos y crear
@@ -90,7 +82,7 @@ export default function Home() {
       </section>
       <br />
       <section id="services" className="p-6 border-t-2">
-        <h1 className="title"><span className="text-complementary me-1">Mis</span>servicios</h1>
+        <h1 className="title"><span>Mis</span>servicios</h1>
         <div className="mt-5 flex flex-row gap-3 divide-x-2">
           <div className="w-1/2">
             <h5 className="font-semibold">{TitleAnimation(["Diseño personalizado", "Responsivo", "Optimizado", ""])}</h5>
