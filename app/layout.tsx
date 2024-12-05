@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./styles/globals.css";
 import * as ui from "./ui"
 
@@ -44,6 +45,7 @@ export default function RootLayout({
         <main className="relative lg:min-w-[31rem] lg:max-w-xl lg:h-[34rem] xl:min-w-[38rem] xl:max-w-2xl">
           {children}
         </main>
+        <GoogleTagManager gtmId="GTM-TCNG9CMM" />
         
         {/*<ui.background />*/}
         <ui.altBackground />
