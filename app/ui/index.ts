@@ -8,3 +8,4 @@ export { default as subtitle } from "./animation/subtitle";
 export { default as background } from "./animation/background";
 export { default as altBackground } from "./animation/altBackground";
 export { default as modal } from "./modal/modal";
+export { default as backend } from "./test/backend";
