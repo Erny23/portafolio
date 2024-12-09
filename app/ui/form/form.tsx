@@ -1,10 +1,44 @@
 "use client";
-//import React from "react"
-//import { Field, Label, Switch } from "@headlessui/react"
+import React from "react";
 
 export default function Example() {
 
-    //const [agreed, setAgreed] = React.useState(false);
+    const [data, setData] = React.useState({
+        firstName: "",
+        lastName: "",
+        company: "",
+        email: "",
+        phone: "",
+        message: ""
+    });
+
+    const [resMessage, setResMessage] = React.useState<string | null>(null);
+
+    const handleChange = (e: { target: { name: string; value: string; }; }) => {
+        const { name, value } = e.target;
+        setData({ ...data, [name]: value });
+    };
+
+    const handleSubmit = async (e: { preventDefault: () => void; }) => {
+        e.preventDefault(); // Evita que la página se recargue
+
+        try {
+            const response = await fetch('https://server.ernestodev.com/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            const result = await response.json();
+            setResMessage(result.message);
+            console.log(resMessage);
+        } catch (error) {
+            console.error('Error al enviar el formulario:', error);
+            setResMessage('Error al enviar el correo');
+        }
+    };
 
     return (
         <div className="isolate">
@@ -16,7 +50,7 @@ export default function Example() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-            <form action="#" method="POST" className="mx-auto mt-8 max-w-xl">
+            <form onSubmit={handleSubmit} className="mx-auto mt-8 max-w-xl">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
                         <label htmlFor="first-name" className="block text-sm/6 font-semibold text-gray-900">
@@ -24,10 +58,12 @@ export default function Example() {
                         </label>
                         <div className="mt-2.5">
                             <input
-                                id="first-name"
-                                name="first-name"
+                                id="firstName"
+                                name="firstName"
                                 type="text"
-                                autoComplete="given-name"
+                                value={data.firstName}
+                                onChange={handleChange}
+                                autoComplete="First name"
                                 className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                             />
                         </div>
@@ -38,10 +74,12 @@ export default function Example() {
                         </label>
                         <div className="mt-2.5">
                             <input
-                                id="last-name"
-                                name="last-name"
+                                id="lastName"
+                                name="lastName"
                                 type="text"
-                                autoComplete="family-name"
+                                value={data.lastName}
+                                onChange={handleChange}
+                                autoComplete="Last name"
                                 className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                             />
                         </div>
@@ -55,7 +93,9 @@ export default function Example() {
                                 id="company"
                                 name="company"
                                 type="text"
-                                autoComplete="organization"
+                                value={data.company}
+                                onChange={handleChange}
+                                autoComplete="Company name"
                                 className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                             />
                         </div>
@@ -69,7 +109,9 @@ export default function Example() {
                                 id="email"
                                 name="email"
                                 type="email"
-                                autoComplete="email"
+                                value={data.email}
+                                onChange={handleChange}
+                                autoComplete="Email address"
                                 className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                             />
                         </div>
@@ -81,23 +123,25 @@ export default function Example() {
                         <div className="mt-2.5">
                             <div className="flex rounded-md bg-white outline outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
                                 <div className="grid shrink-0 grid-cols-1 focus-within:relative">
-                                    {/*<select
-                    id="country"
-                    name="country"
-                    autoComplete="country"
-                    aria-label="Country"
-                    className="col-start-1 row-start-1 w-full appearance-none rounded-md py-2 pl-3.5 pr-7 text-base text-gray-500 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                  >
-                    <option>US</option>
-                    <option>CA</option>
-                    <option>EU</option>
-                  </select>*/}
+                                    <select
+                                            id="country"
+                                            name="country"
+                                            autoComplete="country"
+                                            aria-label="Country"
+                                            className="col-start-1 row-start-1 w-full appearance-none rounded-md py-2 pl-3.5 pr-7 text-base text-gray-500 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                                        >
+                                            <option>US</option>
+                                            <option>CA</option>
+                                            <option>EU</option>
+                                    </select>
                                 </div>
                                 <input
-                                    id="phone-number"
-                                    name="phone-number"
-                                    type="text"
-                                    placeholder="+0 123-456-7890"
+                                    id="phone"
+                                    name="phone"
+                                    type="number"
+                                    value={data.phone}
+                                    onChange={handleChange}
+                                    placeholder="+01234567890"
                                     className="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
                                 />
                             </div>
@@ -111,6 +155,8 @@ export default function Example() {
                             <textarea
                                 id="message"
                                 name="message"
+                                value={data.message}
+                                onChange={handleChange}
                                 rows={4}
                                 className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 defaultValue={''}
@@ -123,7 +169,7 @@ export default function Example() {
                         type="submit"
                         className="block w-full rounded-md bg-complementary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                        Let&apos;s talk
+                        Enviar
                     </button>
                 </div>
             </form>
