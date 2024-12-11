@@ -1,6 +1,7 @@
 "use client";
 import { TypeAnimation } from 'react-type-animation';
 import styles from "./styles/page.module.css";
+import * as index from "./ui/index";
 
 export default function Home() {
 
@@ -65,7 +66,7 @@ export default function Home() {
 
   return (
     <div className={`${styles.page}`}>
-      <h2 className="px-6 pt-6">¡Hola! Soy Ernesto, programador web de Venezuela, Carabobo, Valencia.</h2>
+      <h2 className="px-6 pt-6">¡Hola! Soy Ernesto, un programador web con experiencia en la creación de sitios web.</h2>
       <section id="about" className="px-6 pt-6">
         <h1 className="title"><span>Sobre</span>mi</h1>
         <p className="mt-2">
@@ -85,6 +86,7 @@ export default function Home() {
         <h1 className="title"><span>Mis</span>servicios</h1>
         <div className="mt-5 flex flex-row gap-3 divide-x-2">
           <div className="w-1/2">
+            <index.icons.FaHtml5 className="w-full h-16 text-complementary mb-3 md:h-20" />
             <h5 className="font-semibold">{TitleAnimation(["Diseño personalizado", "Responsivo", "Optimizado", ""])}</h5>
             <p>
               Proyecto adaptado a tus necesitdades, suministro diferentes opciones de diseño de internet y personalizo
@@ -92,6 +94,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-1/2 ps-3">
+            <index.icons.BsDatabaseFillGear className="w-full h-16 text-complementary mb-3 md:h-20" />
             <h5 className="font-semibold">{TitleAnimation(["Seguridad", "Hosting", "Bases de datos", ""])}</h5>
             <p>
               Te ayudo a mantener tu sitio web seguro, administro bases de datos y configuro servidores con
@@ -106,6 +109,7 @@ export default function Home() {
         <div className="flex flex-row gap-3 divide-x-2">
           <div className="w-1/2">
             <div className="w-full py-2"></div>
+            <index.icons.BiSolidWindowAlt className="w-full h-16 text-complementary mb-3 md:h-20" />
             <h5 className="font-semibold">{TitleAnimation(["Tienda online", "Blog personal", "Landing page", ""])}</h5>
             <p>
               Ofrezco diferentes servicios de desarrollo web, desde sitios web estáticos hasta aplicaciones web complejas,
@@ -114,6 +118,7 @@ export default function Home() {
           </div>
           <div className="w-1/2 ps-3">
             <div className="w-full py-2"></div>
+            <index.icons.TbAdjustmentsCode className="w-full h-16 text-complementary mb-3 md:h-20" />
             <h5 className="font-semibold">{TitleAnimation(["Mantenimiento", "Ajustes de diseño", "Corrección de errores", ""])}</h5>
             <p>
               Te ofrezco un servicio completo de mantenimiento y soporte para garantizar que tu proyecto funcione
