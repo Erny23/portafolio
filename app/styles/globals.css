@@ -118,11 +118,11 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   /* Cambio de color para botón de "Descargar CV" */
-  button#downloadCV:hover h3 {
+  a#downloadCV button:hover h3 {
     color: var(--complementary);
   }
 
-  button#downloadCV:hover span {
+  a#downloadCV button:hover span {
     color: var(--complementary);
   }
 }

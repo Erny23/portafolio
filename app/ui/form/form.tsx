@@ -117,7 +117,7 @@ export default function Example() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-            <form onSubmit={handleSubmit} className="mx-auto mt-8 max-w-xl">
+            <form id="contactForm" className="mx-auto mt-8 max-w-xl" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div className={`${style.field}`}>
                         <label htmlFor="first-name">
